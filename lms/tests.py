@@ -56,7 +56,7 @@ class LessonTestCase(APITestCase):
         """
         data = {
             "name": "test",
-            "course": 1,
+            "course": self.course.pk,
             "video_url": "https://www.youtube.com/",
             "description": "test description",
             "owner": self.user.id
